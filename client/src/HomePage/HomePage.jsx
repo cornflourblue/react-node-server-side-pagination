@@ -22,7 +22,7 @@ class HomePage extends React.Component {
     loadPage() {
         // get page of items from api
         const params = new URLSearchParams(location.search);
-        const page = parseInt(params.get('page'));
+        const page = parseInt(params.get('page')) || 1;
         if (page !== this.state.pager.currentPage) {
             fetch(`/api/items?page=${page}`, { method: 'GET' })
                 .then(response => response.json())
