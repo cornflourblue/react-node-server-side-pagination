@@ -1,0 +1,16 @@
+{
+    "name": "node-pagination-example",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "nodemon server.js"
+    },
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "cors": "^2.8.4",
+        "express": "^4.17.1",
+        "jw-paginate": "^1.0.4"
+    },
+    "devDependencies": {
+        "nodemon": "^1.18.4"
+    }
+}
