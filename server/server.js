@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // paged items route
-app.get('/items', (req, res, next) => {
+app.get('/api/items', (req, res, next) => {
     // example array of 150 items to be paged
     const items = [...Array(150).keys()].map(i => ({ id: (i + 1), name: 'Item ' + (i + 1) }));
 
